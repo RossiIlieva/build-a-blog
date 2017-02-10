@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Blog!</title>
+  </head>
+
+  <style type="text/css">
+    body {
+      font-family:  sans-serif;
+      width:  800px;
+      margin:  0 auto;
+      padding: 10px;
+    }
+
+    .main-title{
+        display: block;
+        color: #222;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+        text-decoration: none;
+    }
+
+    .error {
+      color: red
+    }
+
+    label {
+      display: block;
+      font-size: 20px;
+    }
+    input[type=text] {
+      width: 400px;
+      font-size: 20px;
+      padding: 2px;
+    }
+
+    textarea {
+      width: 400px;
+      height: 200px;
+      font-size: 17px;
+      font-family: monospace;
+    }
+
+    input[type=submit] {
+      font-size: 24px;
+    }
+
+    hr#hr01 {
+      margin: 20px auto;
+    }
+
+    hr#hr02 {
+      margin: 2px auto;
+    }
+
+    .blog + .blog {
+      margin-top: 20px;
+    }
+
+    .new_blog_text{
+        border-bottom: 3px solid #666;
+    }
+
+    .blog-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .blog-body {
+        margin:  0;
+        font-size: 17px;
+    }
+  </style>
+
+  <body>
+    <a href="/newpost" class="main-title">
+      Blog!
+    </a>
+
+        {% block content %}
+
+        {% endblock %}
+
+
+    <hr id="hr01">
+
+ </body>
+</html>
